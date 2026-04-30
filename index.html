@@ -12,22 +12,28 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* HERO SECTION */
+/* HERO MIT VOLLBILD */
 .hero {
   height: 100vh;
-  background: url('/beach.png') center/cover no-repeat;
-  position: relative;
+  background-image: url("/beach.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-/* DARK OVERLAY */
-.overlay {
+/* DUNKLER OVERLAY */
+.hero::after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.55);
+  top: 0;
+  left: 0;
 }
 
 /* CONTENT */
@@ -35,20 +41,21 @@ body {
   position: relative;
   text-align: center;
   color: white;
-  max-width: 700px;
+  max-width: 800px;
   padding: 20px;
+  z-index: 2;
 }
 
 /* LOGO */
 .logo {
-  width: 220px;
-  margin-bottom: 25px;
+  width: 300px;
+  margin-bottom: 30px;
 }
 
 /* TEXT */
 h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
+  font-size: 46px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -57,48 +64,53 @@ p {
 }
 
 .list p {
-  margin: 8px 0;
+  margin: 10px 0;
   font-weight: 500;
 }
 
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 18px 35px;
+  margin-top: 30px;
+  padding: 20px 40px;
   background: linear-gradient(135deg, #ff9800, #ff6f00);
   color: white;
   text-decoration: none;
-  border-radius: 10px;
-  font-size: 20px;
+  border-radius: 12px;
+  font-size: 22px;
   font-weight: bold;
 }
 
-/* SECOND SECTION */
+/* SUPPORT */
 .support {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
   background: #fdf6e3;
 }
 
 .support a {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: #ff9800;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 30px;
+  .logo {
+    width: 220px;
   }
 
-  .logo {
-    width: 180px;
+  h1 {
+    font-size: 32px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 16px 28px;
   }
 }
 </style>
@@ -108,8 +120,6 @@ p {
 <body>
 
 <div class="hero">
-
-<div class="overlay"></div>
 
 <div class="content">
 
