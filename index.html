@@ -12,20 +12,19 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* HERO MIT VOLLBILD */
+/* HERO */
 .hero {
   height: 100vh;
   background-image: url("/beach.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-/* DUNKLER OVERLAY */
+/* OVERLAY */
 .hero::after {
   content: "";
   position: absolute;
@@ -49,13 +48,13 @@ body {
 /* LOGO */
 .logo {
   width: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 /* TEXT */
 h1 {
   font-size: 46px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -63,39 +62,44 @@ p {
   margin-bottom: 20px;
 }
 
+/* LIST */
 .list p {
   margin: 10px 0;
-  font-weight: 500;
 }
 
 /* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 30px;
-  padding: 20px 40px;
-  background: linear-gradient(135deg, #ff9800, #ff6f00);
+  padding: 20px 45px;
+  background: linear-gradient(135deg, #ff9800, #ff3d00);
   color: white;
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: 50px;
   font-size: 22px;
   font-weight: bold;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
 }
 
-/* SUPPORT */
-.support {
-  text-align: center;
-  padding: 60px 20px;
-  background: #fdf6e3;
+.btn:hover {
+  transform: scale(1.08);
 }
 
-.support a {
+/* SUPPORT + SOCIAL */
+.links {
+  margin-top: 30px;
+}
+
+.links a {
   display: inline-block;
-  margin-top: 10px;
-  padding: 12px 25px;
-  background: #ff9800;
+  margin: 10px;
+  padding: 10px 18px;
+  background: rgba(255,255,255,0.15);
   color: white;
   text-decoration: none;
   border-radius: 8px;
+  font-size: 15px;
 }
 
 /* MOBILE */
@@ -105,12 +109,12 @@ p {
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .btn {
     font-size: 18px;
-    padding: 16px 28px;
+    padding: 16px 30px;
   }
 }
 </style>
@@ -139,20 +143,23 @@ und dir online ein Einkommen aufbaust.
 </div>
 
 <a href="ebook.html" class="btn">
-📘 Zum E-Book
+🚀 Jetzt starten – E-Book ansehen
 </a>
 
-</div>
-
-</div>
-
-<div class="support">
-<p><b>Unterstütze meine Arbeit</b></p>
-<p>Wenn dir meine Inhalte helfen, freue ich mich über Support 👍</p>
+<div class="links">
 
 <a href="https://www.buymeacoffee.com/DEINNAME" target="_blank">
-☕ Buy Me a Coffee
+☕ Support
 </a>
+
+<a href="https://www.tiktok.com/@changronnythai" target="_blank">
+📱 TikTok
+</a>
+
+</div>
+
+</div>
+
 </div>
 
 </body>
