@@ -84,43 +84,31 @@ p {
   transform: scale(1.08);
 }
 
-/* LINKS SECTION */
-.links {
-  margin-top: 25px;
-}
-
-/* BASE STYLE */
-.links a {
+/* SMALL BUTTONS (GLEICHER STYLE, KLEINER) */
+.btn-small {
   display: inline-block;
   margin: 10px;
-  padding: 12px 24px;
-  text-decoration: none;
+  padding: 10px 20px;
   border-radius: 30px;
   font-size: 15px;
   font-weight: 500;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transition: 0.3s;
 }
 
-/* COFFEE BUTTON */
+.btn-small:hover {
+  transform: scale(1.08);
+}
+
+/* INDIVIDUELLE FARBEN */
 .coffee {
   background: linear-gradient(135deg, #ffb347, #ff9800);
-  color: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.coffee:hover {
-  transform: scale(1.08);
-}
-
-/* TIKTOK BUTTON */
 .tiktok {
-  background: linear-gradient(135deg, #000000, #333333);
-  color: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.tiktok:hover {
-  transform: scale(1.08);
+  background: linear-gradient(135deg, #111111, #333333);
 }
 
 /* MOBILE */
@@ -167,16 +155,14 @@ und dir online ein Einkommen aufbaust.
 🚀 Jetzt starten – E-Book ansehen
 </a>
 
-<div class="links">
-
-<a href="https://buymeacoffee.com/changlife" target="_blank" class="coffee">
-☕ Unterstütze meine Reise
+<div>
+<a href="https://buymeacoffee.com/changlife" target="_blank" class="btn-small coffee">
+☕ Buy Me a Coffee
 </a>
 
-<a href="https://www.tiktok.com/@changronnythai" target="_blank" class="tiktok">
-📱 Folge mir auf TikTok
+<a href="https://www.tiktok.com/@changronnythai" target="_blank" class="btn-small tiktok">
+📱 TikTok folgen
 </a>
-
 </div>
 
 </div>
