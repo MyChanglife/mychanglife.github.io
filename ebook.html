@@ -4,112 +4,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>E-Book – Thailand Auswandern</title>
+<title>Thailand Vibes – E-Book</title>
 
 <style>
 body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #fdf6e3, #fce8c8);
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-}
-
-/* HERO BACKGROUND */
-.hero {
-  min-height: 100vh;
-  background-image: url("/beach.png");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-/* OVERLAY */
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.65);
-  top: 0;
-  left: 0;
-}
-
-/* CONTENT */
-.content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
   text-align: center;
 }
 
-/* LOGO (NEU) */
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
 .logo {
   width: 200px;
   margin-bottom: 20px;
 }
 
-/* IMAGE */
-.book {
-  width: 260px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-/* TEXT */
 h1 {
-  font-size: 38px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  color: #3b2f2f;
 }
 
 p {
   font-size: 18px;
-  margin-bottom: 15px;
-  color: #eee;
+  color: #444;
 }
 
-/* LIST */
+.list {
+  margin-top: 20px;
+}
+
 .list p {
-  margin: 6px 0;
+  margin: 10px 0;
+  font-weight: bold;
 }
 
-/* BUTTON */
-.btn-buy {
+.price {
+  font-size: 28px;
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+.btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 18px 40px;
-  background: linear-gradient(135deg, #ff9800, #ff3d00);
+  margin-top: 20px;
+  padding: 18px 30px;
+  background: #ff8c00;
   color: white;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  transition: 0.3s;
 }
 
-.btn-buy:hover {
-  transform: scale(1.08);
+.btn:hover {
+  background: #e67e00;
 }
 
-/* BACK LINK */
 .back {
-  display: block;
   margin-top: 30px;
-  color: #ccc;
+  display: block;
+  color: #666;
   text-decoration: none;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 28px;
-  }
-
-  .book {
-    width: 200px;
-  }
 }
 </style>
 
@@ -117,35 +78,35 @@ p {
 
 <body>
 
-<div class="hero">
-
-<div class="content">
+<div class="container">
 
 <img src="Chang1.png" class="logo">
 
-<img src="ebook.png" class="book">
-
-<h1>🇹🇭 Auswandern nach Thailand</h1>
+<h1>🇹🇭 Mein Weg nach Thailand</h1>
 
 <p>
-Mein echter Weg ohne großen Plan – die Dinge, die dir niemand sagt.
+Ich zeige dir ehrlich, wie ich ausgewandert bin
+und wie du das auch schaffen kannst.
 </p>
 
 <div class="list">
-<p>✔️ Wie ich gestartet bin (mit wenig Geld)</p>
-<p>✔️ Fehler, die du vermeiden solltest</p>
-<p>✔️ Realität statt Instagram-Lüge</p>
+<p>✔️ echte Kosten erklärt</p>
+<p>✔️ Fehler vermeiden</p>
+<p>✔️ Schritt für Schritt Anleitung</p>
+<p>✔️ Online Einkommen starten</p>
 </div>
 
-<a href="#" class="btn-buy">
-💳 Jetzt kaufen (47€)
+<div class="price">
+Nur 19€
+</div>
+
+<a href="https://wa.me/436645449622" class="btn">
+👉 Jetzt kaufen / Fragen stellen
 </a>
 
 <a href="index.html" class="back">
 ← Zurück zur Startseite
 </a>
-
-</div>
 
 </div>
 
